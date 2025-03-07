@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SensiScape - VR Exposure Therapy</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- AOS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Custom Styles */
+        body {
+            background: linear-gradient(to bottom, #E6F0FA, #FFFFFF);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: white;
+            padding: 120px 0;
+            margin-top: 56px;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            margin-bottom: 40px;
+            color: #2c3e50;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #3498db;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 350px;
+        }
+        
+        .cta-button {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            border: none;
+            padding: 12px 30px;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fw-bold">Sensi</span>Scape
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold mb-4">Virtual Reality Therapy for Social Phobia</h1>
+                    <p class="lead mb-4">Experience breakthrough treatment for social anxiety in controlled, therapeutic VR environments.</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="/api/placeholder/600/400" alt="VR Therapy" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">About SensiScape</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+                    <img src="/api/placeholder/500/300" alt="About SensiScape" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+                    <p class="lead">SensiScape is a groundbreaking Virtual Reality Exposure Therapy (VRET) research project developed to help individuals overcome social phobia and anxiety disorders.</p>
+                    <p>Our innovative approach combines clinical psychology principles with immersive virtual reality technology to create safe, controlled environments where patients can confront and overcome their social fears.</p>
+                    <p>Developed by a team of clinical psychologists, VR experts, and software engineers, SensiScape represents the cutting edge of therapeutic technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">How It Works</h2>
+            <div class="row text-center">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4">
+                        <i class="fas fa-vr-cardboard fa-3x text-primary mb-4"></i>
+                        <h4>Immersive Environments</h4>
+                        <p>Experience realistic social situations in a safe, controlled virtual environment designed for therapeutic exposure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="p-4">
+                        <i class="fas fa-sliders-h fa-3x text-primary mb-4"></i>
+                        <h4>Customized Intensity</h4>
+                        <p>Therapists can adjust scenario difficulty based on individual needs, gradually increasing exposure as comfort improves.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="p-4">
+                        <i class="fas fa-chart-line fa-3x text-primary mb-4"></i>
+                        <h4>Progress Tracking</h4>
+                        <p>Advanced analytics monitor physiological responses and behavioral changes to customize treatment plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-4">"SensiScape helped me overcome my fear of public speaking. After six weeks, I was able to give a presentation at work without panic attacks."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="/api/placeholder/50/50" class="rounded-circle me-3" alt="Client">
+                            <div>
+                                <h5 class="mb-0">Emily L.</h5>
+                                <small class="text-muted">Marketing Professional</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-4">"The virtual environments felt so real, but knowing I was safe helped me practice social interactions without overwhelming anxiety."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="/api/placeholder/50/50" class="rounded-circle me-3" alt="Client">
+                            <div>
+                                <h5 class="mb-0">Michael K.</h5>
+                                <small class="text-muted">College Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="600">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-4">"As a therapist, I've seen remarkable progress in my patients using SensiScape. The customization options allow for truly personalized treatment."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="/api/placeholder/50/50" class="rounded-circle me-3" alt="Client">
+                            <div>
+                                <h5 class="mb-0">Dr. Sarah M.</h5>
+                                <small class="text-muted">Clinical Psychologist</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Research</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+                    <h4>Clinical Evidence</h4>
+                    <p>Our research shows that VRET can reduce social anxiety symptoms by up to 60% after a 12-week treatment program, compared to 35% with traditional cognitive behavioral therapy alone.</p>
+                    <p>SensiScape's protocols have been developed and refined through multiple clinical trials conducted at leading research institutions.</p>
+                    <button class="btn btn-outline-primary mt-3">View Publications</button>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+                    <h4>Ongoing Studies</h4>
+                    <p>Current research is focused on expanding SensiScape's applications to treat specific social anxiety subtypes and integrating biofeedback technology for real-time treatment adjustments.</p>
+                    <p>We are actively recruiting participants for our newest clinical trials. If you're interested in contributing to this groundbreaking research, please contact our research coordinator.</p>
+                    <button class="btn btn-outline-primary mt-3">Participate in Research</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card shadow border-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option selected>Choose a subject</option>
+                                        <option value="research">Research Participation</option>
+                                        <option value="clinical">Clinical Inquiry</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                                </div>
+                                <button type="submit" class="cta-button w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 mb-4">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-12">
+                    <p class="mb-0">&copy; 2025 SensiScape. All rights reserved. Virtual Reality Exposure Therapy Research Project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
